@@ -1,4 +1,4 @@
-// File: C:\Users\FINPEC-NB031\Documents\DeliGo\frontend\src\app\orders\page.tsx
+// File: C:\Users\FINPEC-NB031\Documents\DeliGo-frontend\src\app\orders\page.tsx
 import * as entry from '../../../../src/app/orders/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
