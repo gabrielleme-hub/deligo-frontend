@@ -1,4 +1,4 @@
-const baseUrl = "http://localhost:3000";
+const baseUrl = process.env.NEXT_PUBLIC_API_URL;
 export const urls = {
   USER: {
     CREATE_USER: `${baseUrl}/users`,
