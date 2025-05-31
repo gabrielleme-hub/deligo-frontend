@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/FINPEC-NB031/Documents/DeliGo-frontend/src/app/page.tsx"],"sourcesContent":["\"use client\";\r\nimport { useEffect } from \"react\";\r\nimport { useRouter } from \"next/navigation\";\r\n\r\nexport default function Home() {\r\n  const router = useRouter();\r\n  useEffect(() => {\r\n    router.replace(\"/login\");\r\n  }, [router]);\r\n  return null;\r\n}\r\n"],"names":[],"mappings":";;;AACA;AACA;;AAFA;;;AAIe,SAAS;;IACtB,MAAM,SAAS,CAAA,GAAA,oQAAA,CAAA,YAAS,AAAD;IACvB,CAAA,GAAA,4RAAA,CAAA,YAAS,AAAD;0BAAE;YACR,OAAO,OAAO,CAAC;QACjB;yBAAG;QAAC;KAAO;IACX,OAAO;AACT;GANwB;;QACP,oQAAA,CAAA,YAAS;;;KADF"}},
+    {"offset": {"line": 39, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 49, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/FINPEC-NB031/Documents/DeliGo-frontend/node_modules/.pnpm/next%4015.1.8_react-dom%4019.1.0_react%4019.1.0__react%4019.1.0/node_modules/next/navigation.js"],"sourcesContent":["module.exports = require('./dist/client/components/navigation')\n"],"names":[],"mappings":"AAAA,OAAO,OAAO","ignoreList":[0]}},
+    {"offset": {"line": 50, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

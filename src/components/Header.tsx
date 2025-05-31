@@ -36,7 +36,7 @@ export default function Header({ onSearchChange }: HeaderProps) {
         onChange={(e) => onSearchChange && onSearchChange(e.target.value)}
       />
 
-      {isAdmin ? (
+      {!isAdmin ? (
         <Link href="/features/addProducts">
           <button className="ml-4 bg-primary text-white px-6 py-2 rounded font-semibold hover:bg-primary/90 transition">
             Novo produto
