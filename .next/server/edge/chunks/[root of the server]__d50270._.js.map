@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 23, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/src/middleware.ts"],"sourcesContent":["import { NextResponse } from 'next/server';\r\nimport type { NextRequest } from 'next/server';\r\n\r\nexport function middleware(request: NextRequest) {\r\n  const token = request.cookies.get('token')?.value;\r\n  const isAuthPage = request.nextUrl.pathname.startsWith('/login') || \r\n                    request.nextUrl.pathname.startsWith('/register');\r\n\r\n  if (!token && !isAuthPage) {\r\n    return NextResponse.redirect(new URL('/login', request.url));\r\n  }\r\n\r\n  if (token && isAuthPage) {\r\n    return NextResponse.redirect(new URL('/home', request.url));\r\n  }\r\n\r\n  return NextResponse.next();\r\n}\r\n\r\nexport const config = {\r\n  matcher: [\r\n    '/home/:path*',\r\n    '/checkout/:path*',\r\n    '/login',\r\n    '/register',\r\n  ],\r\n}; "],"names":[],"mappings":";;;;AAAA;AAAA;;AAGO,SAAS,WAAW,OAAoB;IAC7C,MAAM,QAAQ,QAAQ,OAAO,CAAC,GAAG,CAAC,UAAU;IAC5C,MAAM,aAAa,QAAQ,OAAO,CAAC,QAAQ,CAAC,UAAU,CAAC,aACrC,QAAQ,OAAO,CAAC,QAAQ,CAAC,UAAU,CAAC;IAEtD,IAAI,CAAC,SAAS,CAAC,YAAY;QACzB,OAAO,oTAAA,CAAA,eAAY,CAAC,QAAQ,CAAC,IAAI,IAAI,UAAU,QAAQ,GAAG;IAC5D;IAEA,IAAI,SAAS,YAAY;QACvB,OAAO,oTAAA,CAAA,eAAY,CAAC,QAAQ,CAAC,IAAI,IAAI,SAAS,QAAQ,GAAG;IAC3D;IAEA,OAAO,oTAAA,CAAA,eAAY,CAAC,IAAI;AAC1B;AAEO,MAAM,SAAS;IACpB,SAAS;QACP;QACA;QACA;QACA;KACD;AACH"}},
-    {"offset": {"line": 49, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}
