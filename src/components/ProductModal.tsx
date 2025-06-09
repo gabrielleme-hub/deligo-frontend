@@ -1,4 +1,4 @@
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
 import { useState } from "react"; // Importar useState para o controle de quantidade
 import MyButtonText from "./myButtonText";
 import { useCart } from "@/context/CartContext";
@@ -47,7 +47,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
       <div className="bg-[#1C232A] rounded-2xl w-full max-w-sm md:max-w-4xl relative flex flex-col md:flex-row items-center md:items-start gap-8 p-8">
         <MyButtonText onClose={onClose} message="Fechar" />
         <div className="flex-shrink-0 mt-12 md:mt-0">
-          <Image
+          <img
             width={390}
             height={390}
             src={product.image}
