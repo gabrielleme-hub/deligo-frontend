@@ -44,7 +44,7 @@ export default function ProductCard({ product, onClick }: ProductCardProps) {
           {product.favorite ? "♥" : "♡"}
         </button>
       )}
-      <Image
+      <img
         width={44}
         height={44}
         src={product.image}
